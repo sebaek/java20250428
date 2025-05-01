@@ -28,5 +28,39 @@ public class C01Array {
 
         // 연습
         // 3개의 int 값을 담을 수 있는 배열 c를 만들어보세요.
+        int[] c;
+        c = new int[3];
+
+        // c의 각 index에 값을 담아 보세요.
+        c[0] = 987;
+        c[1] = 123;
+        c[2] = 456;
+
+        // c의 각 index의 값을 출력 해보세요.
+        System.out.println(c[0]);
+        System.out.println(c[1]);
+        System.out.println(c[2]);
+
+        //
+        double[] d;
+        d = new double[3];
+
+        d[0] = 3.14;
+        d[1] = 9.12;
+        d[2] = 6.789;
+        System.out.println("d[0] = " + d[0]);
+        System.out.println("d[1] = " + d[1]);
+        System.out.println("d[2] = " + d[2]);
+        System.out.println(d); // ?
+
+        //
+        String[] e;
+        e = new String[3];
+        e[0] = "hi";
+        e[1] = "hello";
+        e[2] = "안녕";
+        System.out.println("e[0] = " + e[0]);
+        System.out.println("e[1] = " + e[1]);
+        System.out.println("e[2] = " + e[2]);
     }
 }
