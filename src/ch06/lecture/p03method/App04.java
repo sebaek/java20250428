@@ -5,7 +5,7 @@ public class App04 {
         MyClass04 a = new MyClass04();
         a.action();
         a.sum(3, 5);
-        a.sum2(10, 20, 30);
+        a.sum(10, 20, 30);
     }
 }
 
