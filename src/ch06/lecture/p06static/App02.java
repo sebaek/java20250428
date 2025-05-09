@@ -14,7 +14,7 @@ class MyClass02 {
 
     // static block
     static {
-        // static filed 초기화 코드 작성 가능
+        // static field 초기화 코드 작성 가능
         int a = 3;
         if (true) {
             a *= 10;
