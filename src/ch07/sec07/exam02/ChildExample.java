@@ -1,4 +1,4 @@
-package ch07.ch07.sec07.exam02;
+package ch07.sec07.exam02;
 
 public class ChildExample {
     public static void main(String[] args) {
@@ -8,6 +8,6 @@ public class ChildExample {
         parent.method1();
         parent.method2();
 //        parent.method3();
-        
+
     }
 }

@@ -1,4 +1,4 @@
-package ch07.ch07.sec07.exam02;
+package ch07.sec07.exam02;
 
 public class Parent {
     public void method1() {
