@@ -11,6 +11,10 @@ public class App03 {
             MyClass031 b = (MyClass031) a; // ok
         }
 
+        if (a instanceof MyClass031 b) {
+            // b의 메소드 호출...
+        }
+
         if (a instanceof MyClass032) {
             System.out.println("실행되니?2");
             MyClass032 c = (MyClass032) a; // x
