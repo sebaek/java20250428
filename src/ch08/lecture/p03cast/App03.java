@@ -4,7 +4,7 @@ public class App03 {
     public static void main(String[] args) {
         MyInterface03 a = new MyClass031();
         // instanceof 연산자 : 왼쪽에 참조변수,오른쪽에 타입
-        //  참조변수가 가리키는 인스턴스(객체) 오른쪽 타입이면 true
+        //  참조변수가 가리키는 인스턴스(객체)가 오른쪽 타입이면 true
         //  아니면 false
         if (a instanceof MyClass031) {
             System.out.println("실행되니?1");
