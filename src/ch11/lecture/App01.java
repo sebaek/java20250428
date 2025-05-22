@@ -12,8 +12,8 @@ public class App01 {
 //        int[] arr = {3, 4};
 //        System.out.println(arr[2]); // IndexOutOfBoundsException
 
-//        Object d = "java";
-//        Integer e = (Integer) d; // ClassCastException
+        Object d = "java";
+        Integer e = (Integer) d; // ClassCastException
 
         System.out.println("프로그램 진행");
     }
