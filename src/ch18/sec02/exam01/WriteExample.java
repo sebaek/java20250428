@@ -8,19 +8,19 @@ import java.io.OutputStream;
 public class WriteExample {
     public static void main(String[] args) {
         try {
-            OutputStream os = new FileOutputStream("C:/Temp/test1.db");
+            try (OutputStream os = new FileOutputStream("C:/Temp/test1.db")) {
 
-            byte a = 10;
-            byte b = 20;
-            int c = 300000000;
+                byte a = 10;
+                byte b = 20;
+                int c = 300000000;
 
-            os.write(a);
-            os.write(b);
-            os.write(c);
-            os.write(c);
+                os.write(a);
+                os.write(b);
+                os.write(c);
+                os.write(c);
 
-            os.flush();
-            os.close();
+                os.flush();
+            }
 
         } catch (IOException e) {
             e.printStackTrace();
