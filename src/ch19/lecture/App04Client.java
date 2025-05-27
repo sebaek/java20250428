@@ -5,6 +5,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class App04Client {
     public static void main(String[] args) {
@@ -14,9 +15,14 @@ public class App04Client {
             BufferedWriter bw = new BufferedWriter(osw);
             PrintWriter pw = new PrintWriter(bw);
 
-            try (pw; bw; osw; os) {
-                pw.println("안녕하세요. 저는 클라이언트 입니다.");
-                pw.flush();
+            Scanner scanner = new Scanner(System.in);
+
+            try (pw; bw; osw; os; scanner) {
+                while (true) {
+                    System.out.print("입력>");
+                    pw.println(scanner.nextLine());
+                    pw.flush();
+                }
             }
 
         } catch (Exception e) {
