@@ -9,7 +9,7 @@ import java.net.Socket;
 
 public class App02Server {
     public static void main(String[] args) throws Exception {
-        String file = "images/bull.jpg";
+        String file = "images/bee.jpg";
 
         // server : client 기다림
         ServerSocket serverSocket = new ServerSocket(9876);
@@ -31,7 +31,7 @@ public class App02Server {
                     bos.write(data, 0, len);
                 }
                 bos.flush();
-                
+
             }
 
         }
