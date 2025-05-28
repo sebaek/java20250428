@@ -1,6 +1,8 @@
 package etc.lecture.p04annotation;
 
 import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @MyAnnotation03
@@ -29,6 +31,7 @@ public class App03 {
         ElementType.PARAMETER,
         ElementType.LOCAL_VARIABLE,
         ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
 @interface MyAnnotation03 {
 
 }
